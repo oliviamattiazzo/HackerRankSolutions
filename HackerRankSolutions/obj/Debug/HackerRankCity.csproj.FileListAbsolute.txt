@@ -1,0 +1,7 @@
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\obj\Debug\HackerRankCity.csprojAssemblyReference.cache
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\obj\Debug\HackerRankCity.csproj.CoreCompileInputs.cache
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\bin\Debug\HackerRankCity.exe.config
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\bin\Debug\HackerRankCity.exe
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\bin\Debug\HackerRankCity.pdb
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\obj\Debug\HackerRankCity.exe
+C:\Projetos\Git\HackerRankSolutions\HackerRankSolutions\obj\Debug\HackerRankCity.pdb
