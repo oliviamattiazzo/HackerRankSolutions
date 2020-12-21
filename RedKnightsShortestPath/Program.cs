@@ -8,50 +8,50 @@ namespace RedKnightsShortestPath
 {
     class Program
     {
-        static Tuple<int[], string> decideMovement(int n, int i_start, int j_start, int i_end, int j_end)
+        static Tuple<int[], int> decideMovement(int n, int i_start, int j_start, int i_end, int j_end)
         {
             if (i_start > i_end && j_start > j_end) //Upper left
             {
                 i_start -= 2;
                 j_start -= 1;
                 
-                return new Tuple<int[], string>(new[] { i_start, j_start }, "UL");
+                return new Tuple<int[], int>(new[] { i_start, j_start }, 1);
             }
 
             if (i_start > i_end && j_start < j_end) //Upper right
             {
                 i_start -= 2;
                 j_start += 1;
-                return new Tuple<int[], string>(new[] { i_start, j_start }, "UR");
+                return new Tuple<int[], int>(new[] { i_start, j_start }, 2);
             }
 
-            if (i_start == i_end && j_start < j_end)
+            if (i_start == i_end && j_start < j_end) //Right
             {
                 j_start += 2;
-                return new Tuple<int[], string>(new[] { i_start, j_start }, "R");
+                return new Tuple<int[], int>(new[] { i_start, j_start }, 3);
             }
 
-            if (i_start < i_end && j_start <= j_end)
+            if (i_start < i_end && j_start <= j_end) //Lower Right
             {
                 i_start += 2;
                 j_start += 1;
-                return new Tuple<int[], string>(new[] { i_start, j_start }, "LR");
+                return new Tuple<int[], int>(new[] { i_start, j_start }, 4);
             }
 
-            if (i_start < i_end && j_start >= j_end)
+            if (i_start < i_end && j_start >= j_end) //Lower Left
             {
                 i_start += 2;
                 j_start -= 1;
-                return new Tuple<int[], string>(new[] { i_start, j_start }, "LL");
+                return new Tuple<int[], int>(new[] { i_start, j_start }, 5);
             }
 
-            if (i_start == i_end && j_start > j_end)
+            if (i_start == i_end && j_start > j_end) //Left
             {
                 j_start -= 2;
-                return new Tuple<int[], string>(new[] { i_start, j_start }, "L");
+                return new Tuple<int[], int>(new[] { i_start, j_start }, 6);
             }
             
-            return new Tuple<int[], string>(new[] { i_start, j_start }, "Impossible");
+            return new Tuple<int[], int>(new[] { i_start, j_start }, 0); //Impossible
         }
 
         static void printShortestPath(int n, int i_start, int j_start, int i_end, int j_end)
@@ -63,7 +63,7 @@ namespace RedKnightsShortestPath
 
             while ((i_start != i_end || j_start != j_end) && !resultIsImpossible)
             {
-                Tuple<int[], string> result = decideMovement(n, i_start, j_start, i_end, j_end);
+                Tuple<int[], int> result = decideMovement(n, i_start, j_start, i_end, j_end);
 
                 if (visitedPositions.Any(p => p[0] == result.Item1[0] && p[1] == result.Item1[1]))
                     resultIsImpossible = true;
@@ -72,7 +72,7 @@ namespace RedKnightsShortestPath
                 j_start = result.Item1[1];
 
                 qtdMovements++;
-                lstMovements.Add(result.Item2);
+                lstMovements.Add(ConvertOrderToMovement(result.Item2));
                 visitedPositions.Add(result.Item1.ToList());
 
                 resultIsImpossible = resultIsImpossible ? true : lstMovements.Any(p => p == "Impossible");
@@ -81,7 +81,31 @@ namespace RedKnightsShortestPath
             if (!resultIsImpossible)
                 Console.WriteLine(qtdMovements);
 
+            lstMovements.Sort();
+            lstMovements.Reverse();
+
             Console.WriteLine(resultIsImpossible ? "Impossible" : string.Join(" ", lstMovements));
+        }
+
+        static string ConvertOrderToMovement(int order)
+        {
+            switch (order)
+            {
+                case 1:
+                    return "UL";
+                case 2:
+                    return "UR";
+                case 3:
+                    return "R";
+                case 4:
+                    return "LR";
+                case 5:
+                    return "LL";
+                case 6:
+                    return "L";
+            }
+
+            return "Impossible";
         }
 
         static void Main(string[] args)
