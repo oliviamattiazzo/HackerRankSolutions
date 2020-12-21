@@ -1,0 +1,7 @@
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\bin\Debug\RedKnightsShortestPath.exe.config
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\bin\Debug\RedKnightsShortestPath.exe
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\bin\Debug\RedKnightsShortestPath.pdb
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\obj\Debug\RedKnightsShortestPath.csprojAssemblyReference.cache
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\obj\Debug\RedKnightsShortestPath.csproj.CoreCompileInputs.cache
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\obj\Debug\RedKnightsShortestPath.exe
+C:\Projetos\Git\HackerRankSolutions\RedKnightsShortestPath\obj\Debug\RedKnightsShortestPath.pdb

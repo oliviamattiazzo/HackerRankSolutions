@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRankCity", "HackerRankSolutions\HackerRankCity.csproj", "{B033B2D9-2F3A-43EC-A1DE-A2AA004C946B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedKnightsShortestPath", "RedKnightsShortestPath\RedKnightsShortestPath.csproj", "{2F306F7B-36E7-41D9-AA20-CAE74F88E789}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B033B2D9-2F3A-43EC-A1DE-A2AA004C946B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B033B2D9-2F3A-43EC-A1DE-A2AA004C946B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B033B2D9-2F3A-43EC-A1DE-A2AA004C946B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
