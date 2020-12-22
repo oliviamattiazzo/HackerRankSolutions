@@ -1,0 +1,7 @@
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\bin\Debug\BikeRacers.exe.config
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\bin\Debug\BikeRacers.exe
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\bin\Debug\BikeRacers.pdb
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\obj\Debug\BikeRacers.csprojAssemblyReference.cache
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\obj\Debug\BikeRacers.csproj.CoreCompileInputs.cache
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\obj\Debug\BikeRacers.exe
+C:\Projetos\Git\HackerRankSolutions\BikeRacers\obj\Debug\BikeRacers.pdb

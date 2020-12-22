@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerRankCity", "HackerRan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedKnightsShortestPath", "RedKnightsShortestPath\RedKnightsShortestPath.csproj", "{2F306F7B-36E7-41D9-AA20-CAE74F88E789}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeRacers", "BikeRacers\BikeRacers.csproj", "{B93C5B89-FCB6-4F1D-A1F7-949F2A9AFD55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F306F7B-36E7-41D9-AA20-CAE74F88E789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93C5B89-FCB6-4F1D-A1F7-949F2A9AFD55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93C5B89-FCB6-4F1D-A1F7-949F2A9AFD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93C5B89-FCB6-4F1D-A1F7-949F2A9AFD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93C5B89-FCB6-4F1D-A1F7-949F2A9AFD55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
